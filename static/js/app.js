@@ -76,9 +76,10 @@ const loginSubmit = () => {
 }
 
 // Logging out and removing token
-const logout = () =>
+const logout = () => {
     localStorage.removeItem('jwtToken');
     loginPage();
+}
 
 // Convert XP
 const bytesTo = (bytes) =>
