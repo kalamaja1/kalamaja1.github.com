@@ -4,7 +4,7 @@ The objective of this project was to learn the GraphQL query language, by creati
 
 ### Hosting
 
-The page is hosted [here](https://kalamaja1.github.com).
+The page is hosted [here](https://kalamaja1.github.io).
 
 ### Audit
 
