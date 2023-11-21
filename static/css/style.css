@@ -1,0 +1,158 @@
+:root {
+    --background: #f2f2f2;
+    --hover: #4caf50;
+    --main: #0074d9;
+    --divbg: #ffffff;
+    --lines: #333333;
+    --border: #cccccc;
+    --logout: #ff0000;
+    --graphWidth: 500px;
+    --graphHeight: 100px;
+    --graphHeight2: 500px;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    background-color: var(--background);
+    color: var(--lines);
+}
+
+.login-container {
+    background-color: var(--divbg);
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.login-container h2 {
+    margin-bottom: 20px;
+    font-size: 24px;
+    color: var(--lines);
+}
+
+#login-form input[type="text"],
+#login-form input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid var(--border);
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+#login-form button {
+    width: 100%;
+    background-color: var(--hover);
+}
+
+button {
+    padding: 10px;
+    color: var(--divbg);
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+#login-form button:hover {
+    background-color: var(--hover);
+}
+
+#head {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    border-bottom: 1px solid var(--border);
+    width: 99vw;
+    white-space: nowrap;
+    overflow: hidden;
+    background-color: var(--divbg);
+}
+
+#hello {
+    margin: 10px;
+}
+
+#logout-button {
+    background-color: var(--logout);
+    border: none;
+    padding: 10px;
+    color: var(--divbg);
+    border-radius: 5px;
+    cursor: pointer;
+    margin-right: 15px;
+}
+
+#logout-button:hover {
+    background-color: var(--hover);
+}
+
+.body {
+    margin-top: 100px;
+    margin-bottom: 200px;
+}
+
+.flex{
+     display:flex;
+     justify-content:center;
+     align-items:center;
+ }
+
+#head button {
+    background-color: var(--logout);
+}
+.chart {
+    background: var(--divbg);
+    padding: 20px 20px 20px 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1);
+    width: var(--graphWidth);
+    height: var(--graphHeight);
+}
+.chart2 {
+    height: var(--graphHeight2);
+}
+
+rect:hover, .lineChart circle:hover {
+    fill: var(--hover);
+}
+
+.info {
+    column-count: 2;
+    background: var(--divbg);
+    padding: 20px 20px 20px 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1);
+}
+
+.info li {
+    line-height: 1.3;
+}
+
+.info ul {
+    margin-top: -20px;
+}
+
+.infoKey {
+    font-weight: normal;
+}
+
+.infoValue {
+    font-weight: bold;
+    background: var(--main);
+    color: var(--divbg);
+    border-radius: 2px;
+    padding: 2px 5px 2px 5px;
+    font-family: monospace;
+}
+
+.infoValue:hover {
+    background-color: var(--hover);
+}
